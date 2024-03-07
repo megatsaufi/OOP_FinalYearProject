@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Events Calendar</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;
+    background-image: url(images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: black;
+  }
+
+header {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black; /* Light blue */
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  a:hover {
+    background-color: whitesmoke; /* Light blue */
+    color: black;
+    transform: scale(1.1);
+  }
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.event {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  flex: 0 0 150px;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+  
+.event-image img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.event p {
+  margin-bottom: 10px;
+}
+
+.event a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.event a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cultural Events Calendar</h1>
+    <a href="index.html">Back</a>
+  </header>
+  <main>
+    <div class="event">
+      <div class="event-image">
+        <img src="images/diwali.jpeg" alt="Diwali Festival">
+      </div>
+      <div class="event-details">
+        <h2>Diwali Festival</h2>
+        <p><strong>Date:</strong> October 24, 2024</p>
+        <p><strong>Location:</strong> Mumbai, India</p>
+        <p><strong>Description:</strong> Diwali, also known as the Festival of Lights, is one of the most important Hindu festivals. It symbolizes the victory of light over darkness and good over evil. The celebration includes lighting oil lamps, fireworks, exchanging sweets, and prayers to the goddess Lakshmi for prosperity.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-image">
+        <img src="images/okto.jpeg" alt="Oktoberfest">
+      </div>
+      <div class="event-details">
+        <h2>Oktoberfest</h2>
+        <p><strong>Date:</strong> September 21 - October 6, 2024</p>
+        <p><strong>Location:</strong> Munich, Germany</p>
+        <p><strong>Description:</strong> Oktoberfest is the world's largest beer festival held annually in Munich, Germany. It is a 16- to 18-day folk festival running from late September to the first weekend in October. Visitors enjoy traditional Bavarian food, music, and of course, plenty of beer.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-image">
+        <img src="images/brazil.jpeg" alt="Carnival of Rio de Janeiro">
+      </div>
+      <div class="event-details">
+        <h2>Carnival of Rio de Janeiro</h2>
+        <p><strong>Date:</strong> February 21 - February 26, 2024</p>
+        <p><strong>Location:</strong> Rio de Janeiro, Brazil</p>
+        <p><strong>Description:</strong> The Carnival of Rio de Janeiro is the world's most famous carnival. It is a festival held before Lent every year and considered the biggest carnival in the world with two million people per day on the streets. The event features samba parades, street parties, and vibrant costumes.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-image">
+        <img src="images/chery.jpeg" alt="Cherry Blossom Festival">
+      </div>
+      <div class="event-details">
+        <h2>Cherry Blossom Festival</h2>
+        <p><strong>Date:</strong> March 20 - April 14, 2024</p>
+        <p><strong>Location:</strong> Tokyo, Japan</p>
+        <p><strong>Description:</strong> The Cherry Blossom Festival, known as Hanami in Japan, celebrates the beauty of cherry blossoms. It is a time when families and friends gather under cherry blossom trees to enjoy picnics and celebrate the arrival of spring. The festival also includes traditional Japanese music and dance performances.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-image">
+        <img src="images/mardi.jpg" alt="Mardi Gras">
+      </div>
+      <div class="event-details">
+        <h2>Mardi Gras</h2>
+        <p><strong>Date:</strong> February 25, 2024</p>
+        <p><strong>Location:</strong> New Orleans, United States</p>
+        <p><strong>Description:</strong> Mardi Gras, also known as Fat Tuesday, is a carnival celebration that marks the day before the fasting season of Lent. It is celebrated with parades, music, masquerade balls, and colorful floats. Mardi Gras is famous for its festive atmosphere and elaborate costumes.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Cultural Events Calendar</p>
+  </footer>
+  <script>
+    // Optional JavaScript for additional interactivity
+    // You can add more JavaScript functionality here if needed
+  </script>
+</body>
+</html>

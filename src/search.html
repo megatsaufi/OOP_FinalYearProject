@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Search</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="fetch.js" defer></script>
+    <style>
+        
+        .back-button {
+            background-color: #ffffff; 
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .back-button:hover {
+            background-color:gainsboro;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="images/Argentina.gif">
+    <img src="images/Australia.gif">
+    <img src="images/Animated-Flag-Brazil.gif">
+    <img src="images/Animated-Flag-Brunei.gif">
+    <img src="images/Animated-Flag-France.gif">
+    <img src="images/Malaysia.gif">
+    <img src="images/Animated-Flag-Qatar.gif">
+    <img src="images/Animated-Flag-Palestine.gif">
+    <img src="images/Animated-Flag-Russia.gif">
+    <img src="images/225px-Animated-Flag-Thailand.gif">
+    <img src="images/Animated-Flag-USA.gif">
+    <img src="images/Animated-Flag-United-Kingdom.gif">
+    <img src="images/225px-Animated-Flag-North-Korea.gif">
+    <img src="images/Animated-Flag-Spain.gif">
+    <img src="images/Animated-Flag-Germany.gif">
+    <img src="images/Animated-Flag-Jamaica.gif">
+    <img src="images/Animated-Flag-Japan.gif">
+    <img src="images/225px-Animated-Flag-South-Korea.gif">
+    
+</header>
+
+<main>
+    <section>
+        <div class="containers">
+            <p style="color: white;font-size: 35pt;">Enter a country name to search :</p>
+        <div class="finder">
+            <div class="finder__outer">
+                <div class="finder__inner">
+                    <div class="finder__icon" ref="icon"></div>
+                    <input class="finder__input" type="text" id="SearchData" placeholder="Enter country" autocomplete="off">
+                </div>
+            </div>
+          
+            <button onclick="buttonClicked()" class="search-button">Search</button>
+        </div>
+    </section>
+    <div id="countryInfo" class="country-info-container"></div>
+    <button onclick="goBack()" class="back-button">Back</button>
+</main> 
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>

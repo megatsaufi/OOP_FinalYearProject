@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photon/0.1.2/css/photon.min.css">
+    <link rel="stylesheet" href="crud.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        .container {
+            opacity: 0.89;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 160px;
+        }
+
+        .footer {
+            background-color: #007bff;
+            padding: 30px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .cta-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .cta-form h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .cta-form p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form__input {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .btnCreate {
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btnCreate:hover {
+            background-color: #003c80;
+        }
+
+        #commentSection {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .comment__name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comment__content {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<header style="background-color: black ;opacity: 0.8;">
+    <img src="images/Argentina.gif">
+    <img src="images/Australia.gif">
+    <img src="images/Animated-Flag-Brazil.gif">
+    <img src="images/Animated-Flag-Brunei.gif">
+    <img src="images/Animated-Flag-France.gif">
+    <img src="images/Malaysia.gif">
+    <img src="images/Animated-Flag-Qatar.gif">
+    <img src="images/Animated-Flag-Palestine.gif">
+    <img src="images/Animated-Flag-Russia.gif">
+    <img src="images/225px-Animated-Flag-Thailand.gif">
+    <img src="images/Animated-Flag-USA.gif">
+    <img src="images/Animated-Flag-United-Kingdom.gif">
+    <img src="images/225px-Animated-Flag-North-Korea.gif">
+    <img src="images/Animated-Flag-Spain.gif">
+    <img src="images/Animated-Flag-Germany.gif">
+    <img src="images/Animated-Flag-Jamaica.gif">
+    <img src="images/Animated-Flag-Japan.gif">
+    <img src="images/225px-Animated-Flag-South-Korea.gif">
+</header>
+<body>
+    <div class="container">
+        <div class="cta-form">
+            <center><h2>Please Leave A Review</h2></center>
+            <p></p>
+        </div>
+        <form class="form">
+            <input id="fileName" class="form__input" placeholder="Your Name">
+            <input id="fileContents" class="form__input" placeholder="Your Comment">
+            <button id="btnCreate" class="btnCreate">Send</button>
+            <a href="index.html">Back</a>
+        </form>
+        <div id="commentSection">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    
+</body>
+
+</html>
+    

@@ -1,0 +1,229 @@
+
+.containers {
+  margin-top: 25px;
+  text-align: center;
+  color: #2c3e50;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  /* styles.css */
+  .finder {
+    border: 1px solid #fff;
+    background-color: #f6f5f0;
+    border-radius: 15px;
+    padding: 8px;
+    box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+  
+  .finder__outer {
+    display: flex;
+    width: 600px;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 15px -10px #c3c3c3,
+      inset -10px -10px 15px -10px #ffffff;
+  }
+  
+  .finder__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+  }
+  
+  .finder__form {
+    flex: 1;
+    height: calc(100% + 3rem);
+  }
+  
+  .finder__input {
+    height: calc(50% + 3rem);
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.75px;
+  }
+  
+  .finder__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    transition: all 0.2s;
+    box-shadow: inset 0 0 0 20px #292929;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;
+    background-image: url(images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+  }
+  
+  img{
+    width: 80px;
+  }
+
+  html::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: -1;
+  }
+
+  header, main, footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  main {
+    padding-top: 100px; /* Adjust spacing for header */
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  a:hover {
+    background-color: whitesmoke; 
+    color: black;
+    transform: scale(1.1);
+  }
+
+  a.learn-more {
+    display: inline-block;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  a.learn-more:hover {
+    background-color: whitesmoke; 
+    transform: scale(1.05);
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+
+  .search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke; 
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: gainsboro    ; 
+    transform: scale(1.05);
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    width: 100%;
+    padding: 10px 0; /* Adjust padding for better alignment */
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+  }
+
+
+  .country-info-container {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    color: black;
+    
+  }
+  
+  .country-info {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .country-flag {
+    width: 350px;
+    height: auto;
+    float: right;
+  } 
+
+.container {
+  width: 80%; 
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: gainsboro; 
+  border: 1px solid #ccc; 
+  opacity: 0.85;
+  box-sizing: border-box; 
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
